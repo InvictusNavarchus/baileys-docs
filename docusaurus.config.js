@@ -86,11 +86,11 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/01-introduction',
+                to: '/introduction/',
               },
               {
                 label: 'API Reference',
-                to: '/13-api-reference',
+                to: '/api-reference/',
               },
             ],
           },
