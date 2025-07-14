@@ -649,5 +649,5 @@ class MediaValidator {
 ---
 
 **Related Pages:**
-- [Messages](../messages/README.md) - Message handling
-- [Examples](../examples/media-bot.md) - Media bot example
+- [Messages](/messages/) - Message handling
+- [Examples](/examples/media-bot) - Media bot example

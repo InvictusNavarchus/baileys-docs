@@ -584,4 +584,4 @@ const getMessageText = (message: WAMessage): string => {
 **Related Pages:**
 - [Sending Messages](./sending-messages.md) - How to send messages
 - [Receiving Messages](./receiving-messages.md) - How to handle incoming messages
-- [Message API Reference](../api-reference/message-api.md) - Complete API documentation
+- [Message API Reference](/api-reference/message-api) - Complete API documentation

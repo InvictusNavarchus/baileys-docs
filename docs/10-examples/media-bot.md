@@ -635,5 +635,5 @@ This media bot provides a comprehensive solution for handling all types of media
 
 **Related Examples:**
 - [Basic Bot](./basic-bot.md) - Simple message handling
-- [Group Bot](./group-bot.md) - Group management features
-- [Business Bot](./business-bot.md) - Business-focused features
+- [Group Bot](/examples/group-bot) - Group management features
+- [Business Bot](/examples/business-bot) - Business-focused features

@@ -652,4 +652,4 @@ setInterval(logStats, 60000)
 **Related Pages:**
 - [Message Types](./message-types.md) - All supported message types
 - [Sending Messages](./sending-messages.md) - How to send messages
-- [Message API Reference](../api-reference/message-api.md) - Complete API documentation
+- [Message API Reference](/api-reference/message-api) - Complete API documentation

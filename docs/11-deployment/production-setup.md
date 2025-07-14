@@ -679,5 +679,5 @@ crontab -e
 ---
 
 **Next Steps:**
-- [Scaling](./scaling.md) - Scale your application
-- [Monitoring](./monitoring.md) - Advanced monitoring setup
+- [Scaling](/deployment/scaling) - Scale your application
+- [Monitoring](/deployment/monitoring) - Advanced monitoring setup

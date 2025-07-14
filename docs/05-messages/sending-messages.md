@@ -531,4 +531,4 @@ await sock.sendMessage(jid, {
 **Related Pages:**
 - [Message Types](./message-types.md) - All supported message types
 - [Receiving Messages](./receiving-messages.md) - How to handle incoming messages
-- [Message API Reference](../api-reference/message-api.md) - Complete API documentation
+- [Message API Reference](/api-reference/message-api) - Complete API documentation

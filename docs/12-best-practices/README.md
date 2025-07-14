@@ -892,5 +892,5 @@ class MessageRouter {
 
 **Related Pages:**
 - [Performance](./performance.md) - Performance optimization techniques
-- [Architecture](../architecture/README.md) - System architecture
-- [Deployment](../deployment/README.md) - Production deployment
+- [Architecture](/architecture/) - System architecture
+- [Deployment](/deployment/) - Production deployment

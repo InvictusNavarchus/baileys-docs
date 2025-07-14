@@ -779,10 +779,10 @@ export class SessionBackup {
 
 ## Next Steps
 
-- **[Production Setup](./production-setup.md)**: Detailed production configuration
-- **[Scaling](./scaling.md)**: Advanced scaling strategies
-- **[Monitoring](./monitoring.md)**: Comprehensive monitoring setup
-- **[Best Practices](../12-best-practices/README.md)**: Production best practices
+- **[Production Setup](/deployment/production-setup)**: Detailed production configuration
+- **[Scaling](/deployment/scaling)**: Advanced scaling strategies
+- **[Monitoring](/deployment/monitoring)**: Comprehensive monitoring setup
+- **[Best Practices](/best-practices/)**: Production best practices
 
 ---
 

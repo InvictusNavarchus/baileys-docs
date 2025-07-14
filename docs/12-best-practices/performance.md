@@ -956,5 +956,5 @@ console.log('Performance metrics:', metrics)
 
 **Related Pages:**
 - [Best Practices](./README.md) - General best practices
-- [Scaling](../deployment/scaling.md) - Application scaling
-- [Monitoring](../deployment/monitoring.md) - Performance monitoring
+- [Scaling](/deployment/scaling) - Application scaling
+- [Monitoring](/deployment/monitoring) - Performance monitoring

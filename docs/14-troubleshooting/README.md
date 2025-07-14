@@ -555,7 +555,7 @@ When asking for help, include:
 
 - **[Common Issues](./common-issues.md)**: More specific problem solutions
 - **[Debugging](./debugging.md)**: Advanced debugging techniques
-- **[Performance](../12-best-practices/performance.md)**: Performance optimization
+- **[Performance](/best-practices/performance)**: Performance optimization
 - **[FAQ](../15-faq/README.md)**: Frequently asked questions
 
 ---
