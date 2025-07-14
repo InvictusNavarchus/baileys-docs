@@ -1,3 +1,10 @@
+---
+title: Introduction to Baileys
+sidebar_position: 1
+description: Welcome to Baileys, the most comprehensive and powerful TypeScript library for building WhatsApp bots and automation tools.
+keywords: [baileys, whatsapp, bot, typescript, websocket, automation]
+---
+
 # Introduction to Baileys
 
 Welcome to Baileys, the most comprehensive and powerful TypeScript library for building WhatsApp bots and automation tools. This documentation will guide you through everything you need to know to build production-ready WhatsApp applications.

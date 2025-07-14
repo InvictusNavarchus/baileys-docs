@@ -1,3 +1,10 @@
+---
+title: API Reference
+sidebar_position: 1
+description: Comprehensive API documentation for all Baileys functions, types, and interfaces.
+keywords: [baileys, api reference, documentation, functions, types, interfaces]
+---
+
 # API Reference
 
 This section provides comprehensive API documentation for all Baileys functions, types, and interfaces.

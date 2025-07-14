@@ -1,3 +1,10 @@
+---
+title: Session Management
+sidebar_position: 2
+description: Complete guide to managing authentication sessions in Baileys for building reliable WhatsApp bots.
+keywords: [baileys, session management, authentication, persistence, reliability, whatsapp]
+---
+
 # Session Management
 
 Proper session management is crucial for building reliable WhatsApp bots. This guide covers everything you need to know about managing authentication sessions in Baileys.

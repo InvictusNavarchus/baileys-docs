@@ -1,3 +1,10 @@
+---
+title: Socket Layers Deep Dive
+sidebar_position: 2
+description: In-depth look at each socket layer in Baileys, their specific responsibilities and how they build upon each other.
+keywords: [baileys, socket layers, deep dive, architecture, websocket, layers]
+---
+
 # Socket Layers Deep Dive
 
 This document provides an in-depth look at each socket layer in Baileys, explaining their specific responsibilities and how they build upon each other.

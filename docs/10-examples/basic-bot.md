@@ -1,3 +1,10 @@
+---
+title: Basic WhatsApp Bot
+sidebar_position: 1
+description: Complete example of a production-ready WhatsApp bot with command handling, error management, and proper session handling.
+keywords: [baileys, basic bot, whatsapp bot, example, commands, error handling, session management]
+---
+
 # Basic WhatsApp Bot
 
 This example demonstrates how to build a complete, production-ready WhatsApp bot with essential features like command handling, error management, and proper session handling.

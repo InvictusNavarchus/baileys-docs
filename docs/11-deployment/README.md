@@ -1,3 +1,10 @@
+---
+title: Deployment Guide
+sidebar_position: 1
+description: Complete guide to deploying Baileys applications to production environments, including cloud platforms, containerization, and scaling.
+keywords: [baileys, deployment, production, cloud, docker, scaling, best practices]
+---
+
 # Deployment Guide
 
 This guide covers deploying Baileys applications to production environments, including cloud platforms, containerization, and best practices for scaling.

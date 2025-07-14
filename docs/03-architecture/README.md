@@ -1,3 +1,10 @@
+---
+title: Architecture Overview
+sidebar_position: 1
+description: Understanding Baileys' layered architecture, socket system, and how different components work together for WhatsApp applications.
+keywords: [baileys, architecture, socket layers, websocket, protocol, components]
+---
+
 # Architecture Overview
 
 Understanding Baileys' architecture is crucial for building robust WhatsApp applications. This section explains how Baileys is structured internally and how different components work together.

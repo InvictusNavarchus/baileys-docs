@@ -1,3 +1,10 @@
+---
+title: Authentication System
+sidebar_position: 1
+description: Comprehensive guide to Baileys' authentication system, session management, and different authentication methods for WhatsApp Web.
+keywords: [baileys, authentication, session management, qr code, pairing code, whatsapp web]
+---
+
 # Authentication System
 
 Baileys implements a comprehensive authentication system that handles secure connections to WhatsApp Web. This guide explains how authentication works, session management, and different authentication methods.

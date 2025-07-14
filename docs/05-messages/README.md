@@ -1,3 +1,10 @@
+---
+title: Message System
+sidebar_position: 1
+description: Comprehensive guide to the message system in Baileys - sending, receiving, and processing messages for WhatsApp bots.
+keywords: [baileys, messages, sending, receiving, processing, whatsapp bot, message types]
+---
+
 # Message System
 
 The message system is the core of any WhatsApp bot. This comprehensive guide covers everything about sending, receiving, and processing messages in Baileys.

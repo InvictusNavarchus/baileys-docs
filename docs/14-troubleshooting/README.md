@@ -1,3 +1,10 @@
+---
+title: Troubleshooting Guide
+sidebar_position: 1
+description: Comprehensive troubleshooting guide to diagnose and fix common issues when working with Baileys.
+keywords: [baileys, troubleshooting, debugging, common issues, problems, solutions]
+---
+
 # Troubleshooting Guide
 
 This guide helps you diagnose and fix common issues when working with Baileys. Use this as your first resource when encountering problems.

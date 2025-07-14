@@ -1,3 +1,10 @@
+---
+title: Installation & Setup
+sidebar_position: 1
+description: Complete guide to installing Baileys and setting up your development environment for building WhatsApp bots.
+keywords: [baileys, installation, setup, npm, yarn, typescript, nodejs]
+---
+
 # Installation & Setup
 
 This guide will walk you through installing Baileys and setting up your development environment for building WhatsApp bots.

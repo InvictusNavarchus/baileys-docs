@@ -1,3 +1,10 @@
+---
+title: Frequently Asked Questions (FAQ)
+sidebar_position: 1
+description: Answers to the most common questions about Baileys, WhatsApp bots, and troubleshooting.
+keywords: [baileys, faq, frequently asked questions, whatsapp, bot, troubleshooting]
+---
+
 # Frequently Asked Questions (FAQ)
 
 This section answers the most common questions about Baileys. If you don't find your answer here, check the [Troubleshooting Guide](../14-troubleshooting/README.md) or ask in our [Discord community](https://discord.gg/WeJM5FP9GG).

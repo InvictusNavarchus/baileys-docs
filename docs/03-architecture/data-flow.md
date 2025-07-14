@@ -1,3 +1,10 @@
+---
+title: Data Flow in Baileys
+sidebar_position: 3
+description: Understanding how data flows through Baileys for building efficient applications and debugging issues.
+keywords: [baileys, data flow, message flow, websocket, processing, debugging]
+---
+
 # Data Flow in Baileys
 
 Understanding how data flows through Baileys is essential for building efficient applications and debugging issues. This document explains the complete data flow for various operations.

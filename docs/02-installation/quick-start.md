@@ -1,3 +1,10 @@
+---
+title: Quick Start Guide
+sidebar_position: 2
+description: Get your first WhatsApp bot running in just 5 minutes! Create a simple echo bot that responds to messages.
+keywords: [baileys, quick start, echo bot, whatsapp bot, tutorial]
+---
+
 # Quick Start Guide
 
 Get your first WhatsApp bot running in just 5 minutes! This guide will walk you through creating a simple echo bot that responds to messages.
