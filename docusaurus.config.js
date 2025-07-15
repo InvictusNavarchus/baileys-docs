@@ -25,9 +25,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Enable experimental faster build with Rspack
+  // Enable experimental faster build with Rspack and v4 future flags
   future: {
     experimental_faster: true,
+    v4: true,
   },
 
   // Even if you don't use internalization, you can use this field to set useful
