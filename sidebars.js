@@ -15,11 +15,12 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
+    'index',
     {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'introduction/README',
+        'introduction/introduction',
         'installation/README',
         'installation/quick-start',
       ],
@@ -32,8 +33,11 @@ const sidebars = {
         'architecture/socket-layers',
         'architecture/data-flow',
         'authentication/README',
+        'authentication/qr-code-auth',
+        'authentication/pairing-code-auth',
         'authentication/session-management',
         'messages/README',
+        'messages/message-types',
       ],
     },
     {
@@ -49,7 +53,13 @@ const sidebars = {
       label: 'Reference',
       items: [
         'api-reference/README',
+        'api-reference/socket-api',
+        'api-reference/message-api',
+        'api-reference/group-api',
+        'api-reference/types',
         'troubleshooting/README',
+        'troubleshooting/common-issues',
+        'troubleshooting/debugging',
         'faq/README',
       ],
     },

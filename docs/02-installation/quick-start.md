@@ -280,7 +280,7 @@ Congratulations! You now have a working WhatsApp bot. Here's what to explore nex
 1. **[Architecture Overview](../03-architecture/README.md)**: Understand how Baileys works internally
 2. **[Authentication](../04-authentication/README.md)**: Learn about session management and security
 3. **[Message System](../05-messages/README.md)**: Explore different message types and advanced features
-4. **[Examples](../10-examples/README.md)**: See more complex bot implementations
+4. **[Examples](/examples/)**: See more complex bot implementations
 
 ## Tips for Development
 

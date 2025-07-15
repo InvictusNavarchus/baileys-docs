@@ -113,7 +113,7 @@ await sock.sendMessage(jid, {
 // Regular audio
 await sock.sendMessage(jid, {
     audio: { url: './audio.mp3' },
-    mimetype: 'audio/mp4'
+    mimetype: 'audio/mpeg'
 })
 
 // Voice message (PTT - Push to Talk)
@@ -653,9 +653,9 @@ const cacheMessage = (message: WAMessage) => {
 ## Next Steps
 
 - **[Message Types](./message-types.md)**: Detailed guide to all message types
-- **[Sending Messages](./sending-messages.md)**: Advanced sending techniques
-- **[Receiving Messages](./receiving-messages.md)**: Message processing patterns
-- **[Media Handling](../07-media/README.md)**: Working with media messages
+- **[Sending Messages](/messages/sending-messages)**: Advanced sending techniques
+- **[Receiving Messages](/messages/receiving-messages)**: Message processing patterns
+- **[Media Handling](/media/)**: Working with media messages
 
 ---
 

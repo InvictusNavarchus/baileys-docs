@@ -498,9 +498,9 @@ sock.ev.process((events) => {
 
 ## Next Steps
 
-- **[Authentication System](../04-authentication/README.md)**: Deep dive into authentication
-- **[Message System](../05-messages/README.md)**: Explore message handling
-- **[Event System](../06-events/README.md)**: Learn about event processing
+- **[Authentication System](/authentication/)**: Deep dive into authentication
+- **[Message System](/messages/)**: Explore message handling
+- **[Event System](/events/)**: Learn about event processing
 
 ---
 

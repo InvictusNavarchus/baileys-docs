@@ -592,7 +592,7 @@ This basic bot provides a solid foundation that you can extend with additional f
 
 ## Next Steps
 
-- **[Media Bot](./media-bot.md)**: Handle images, videos, and documents
-- **[Group Bot](./group-bot.md)**: Advanced group management features
-- **[Business Bot](./business-bot.md)**: E-commerce and business features
+- **[Media Bot](/examples/media-bot)**: Handle images, videos, and documents
+- **[Group Bot](/examples/group-bot)**: Advanced group management features
+- **[Business Bot](/examples/business-bot)**: E-commerce and business features
 - **[Deployment](../11-deployment/README.md)**: Deploy your bot to production
