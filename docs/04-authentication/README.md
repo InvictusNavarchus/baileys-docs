@@ -103,27 +103,43 @@ import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys'
 
 async function connectWithQR() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info')
-    
+
     const sock = makeWASocket({
         auth: state,
         printQRInTerminal: true,  // Show QR in terminal
         browser: ['MyBot', 'Chrome', '1.0.0']  // Custom browser info
     })
-    
-    sock.ev.on('connection.update', (update) => {
+
+    const handleConnectionUpdate = (update) => {
         const { connection, lastDisconnect, qr } = update
-        
+
         if (qr) {
             console.log('QR Code received, scan with your phone')
             // You can also generate QR code image here
         }
-        
+
         if (connection === 'open') {
             console.log('Connected successfully!')
         }
-    })
-    
+
+        if (connection === 'close') {
+            // Clean up event listeners before reconnecting
+            sock.ev.off('connection.update', handleConnectionUpdate)
+            sock.ev.off('creds.update', saveCreds)
+
+            const shouldReconnect = lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut
+
+            if (shouldReconnect) {
+                console.log('Connection closed, reconnecting...')
+                setTimeout(() => connectWithQR(), 3000) // Reconnect after 3 seconds
+            }
+        }
+    }
+
+    sock.ev.on('connection.update', handleConnectionUpdate)
     sock.ev.on('creds.update', saveCreds)
+
+    return sock
 }
 ```
 
@@ -134,30 +150,47 @@ Alternative method using a 8-digit pairing code.
 ```typescript
 async function connectWithPairingCode() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info')
-    
+
     const sock = makeWASocket({
         auth: state,
         printQRInTerminal: false,  // Disable QR code
         browser: ['MyBot', 'Chrome', '1.0.0']
     })
-    
+
     // Request pairing code if not registered
     if (!sock.authState.creds.registered) {
         const phoneNumber = '+1234567890'  // Your phone number
         const code = await sock.requestPairingCode(phoneNumber)
         console.log(`Pairing code: ${code}`)
-        
+
         // User enters this code in WhatsApp > Linked Devices > Link with phone number
     }
-    
-    sock.ev.on('connection.update', (update) => {
-        const { connection } = update
+
+    const handleConnectionUpdate = (update) => {
+        const { connection, lastDisconnect } = update
+
         if (connection === 'open') {
             console.log('Connected with pairing code!')
         }
-    })
-    
+
+        if (connection === 'close') {
+            // Clean up event listeners before reconnecting
+            sock.ev.off('connection.update', handleConnectionUpdate)
+            sock.ev.off('creds.update', saveCreds)
+
+            const shouldReconnect = lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut
+
+            if (shouldReconnect) {
+                console.log('Connection closed, reconnecting...')
+                setTimeout(() => connectWithPairingCode(), 3000) // Reconnect after 3 seconds
+            }
+        }
+    }
+
+    sock.ev.on('connection.update', handleConnectionUpdate)
     sock.ev.on('creds.update', saveCreds)
+
+    return sock
 }
 ```
 
