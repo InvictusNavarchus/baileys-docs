@@ -448,10 +448,28 @@ const recoverSession = async () => {
 import crypto from 'crypto'
 
 const encryptAuthData = (data: string, password: string): string => {
-    const cipher = crypto.createCipher('aes-256-cbc', password)
+    // Validate key length (should be 32 bytes for AES-256)
+    const key = crypto.scryptSync(password, 'salt', 32)
+    const iv = crypto.randomBytes(16)
+
+    const cipher = crypto.createCipheriv('aes-256-cbc', key, iv)
     let encrypted = cipher.update(data, 'utf8', 'hex')
     encrypted += cipher.final('hex')
-    return encrypted
+
+    // Prepend IV to encrypted data
+    return iv.toString('hex') + ':' + encrypted
+}
+
+const decryptAuthData = (encryptedData: string, password: string): string => {
+    const [ivHex, encrypted] = encryptedData.split(':')
+    const iv = Buffer.from(ivHex, 'hex')
+    const key = crypto.scryptSync(password, 'salt', 32)
+
+    const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv)
+    let decrypted = decipher.update(encrypted, 'hex', 'utf8')
+    decrypted += decipher.final('utf8')
+
+    return decrypted
 }
 ```
 
