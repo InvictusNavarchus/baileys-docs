@@ -113,7 +113,7 @@ await sock.sendMessage(jid, {
 // Regular audio
 await sock.sendMessage(jid, {
     audio: { url: './audio.mp3' },
-    mimetype: 'audio/mp4'
+    mimetype: 'audio/mpeg'
 })
 
 // Voice message (PTT - Push to Talk)
